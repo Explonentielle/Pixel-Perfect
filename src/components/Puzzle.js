@@ -76,10 +76,7 @@ const Puzzle = ({ pieces, initialState, setPieces }) => {
                        <Pieces
                        key={piece.id}
                        index={index}
-                       id={piece.id}
-                       name={piece.name}
-                       img={piece.img}
-                       bgColor={piece.bgColor}
+                       piece={piece}
                        className={ 'pieces'}
                      />
                     ))}

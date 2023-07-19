@@ -9,6 +9,8 @@ const Container = ({ content }) => {
     const [hasMoved, setHasMoved] = useState(false); 
     const [itsWin, setItsWin] = useState(false);
 
+
+
     const onDragEnd = (result) => {
         const { destination, source } = result;
     
@@ -30,12 +32,16 @@ const Container = ({ content }) => {
         setHasMoved(true);
       };
     
+
+
       useEffect(() => {
         if (hasMoved) {
           checkIfWon();
         }
       }, [pieces, hasMoved]);
     
+
+
       const checkIfWon = () => {
         let isWon = true;
     
@@ -45,7 +51,6 @@ const Container = ({ content }) => {
             break;
           }
         }
-        
         if (isWon) {
             setItsWin(true)
         }
