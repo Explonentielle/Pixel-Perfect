@@ -40,8 +40,6 @@ const Container = ({ content }) => {
         }
       }, [pieces, hasMoved]);
     
-
-
       const checkIfWon = () => {
         let isWon = true;
     
